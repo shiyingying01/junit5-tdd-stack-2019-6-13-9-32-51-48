@@ -51,4 +51,40 @@ public void should_return_Whizz_when_fizzBuzz_given_7() {
 	Assertions.assertEquals("Whizz", word);
 }
 
+@Test
+public void should_return_Whizz_when_fizzBuzz_given_15() {
+	//given
+	int number = 15;
+	
+	//when
+	String word = FizzBuzzNumberGame.fizzBuzz(number);
+	
+	//then
+	Assertions.assertEquals("FizzBuzz", word);
+}
+
+@Test
+public void should_return_Whizz_when_fizzBuzz_given_35() {
+	//given
+	int number = 35;
+	
+	//when
+	String word = FizzBuzzNumberGame.fizzBuzz(number);
+	
+	//then
+	Assertions.assertEquals("BuzzWhizz", word);
+}
+
+@Test
+public void should_return_Whizz_when_fizzBuzz_given_105() {
+	//given
+	int number = 105;
+	
+	//when
+	String word = FizzBuzzNumberGame.fizzBuzz(number);
+	
+	//then
+	Assertions.assertEquals("FizzBuzzWhizz", word);
+}
+
 }
